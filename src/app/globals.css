@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+@font-face { font-family: 'Tomato Grotesk'; src: url('/fonts/TomatoGrotesk-Thin.otf') format('opentype'); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Tomato Grotesk'; src: url('/fonts/TomatoGrotesk-ExtraLight.otf') format('opentype'); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Tomato Grotesk'; src: url('/fonts/TomatoGrotesk-Light.otf') format('opentype'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Tomato Grotesk'; src: url('/fonts/TomatoGrotesk-Regular.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Tomato Grotesk'; src: url('/fonts/TomatoGrotesk-Slanted.otf') format('opentype'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Tomato Grotesk'; src: url('/fonts/TomatoGrotesk-Medium.otf') format('opentype'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Tomato Grotesk'; src: url('/fonts/TomatoGrotesk-SemiBold.otf') format('opentype'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Tomato Grotesk'; src: url('/fonts/TomatoGrotesk-Bold.otf') format('opentype'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Tomato Grotesk'; src: url('/fonts/TomatoGrotesk-BoldSlanted.otf') format('opentype'); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Tomato Grotesk'; src: url('/fonts/TomatoGrotesk-ExtraBold.otf') format('opentype'); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Tomato Grotesk'; src: url('/fonts/TomatoGrotesk-Black.otf') format('opentype'); font-weight: 900; font-style: normal; font-display: swap; }
+
 :root {
   --red: #C8102E;
   --red-dark: #8B0000;
@@ -7,6 +19,8 @@
   --gold: #C9A84C;
   --black: #0A0A0A;
   --white: #FAFAFA;
+  --font-playfair: 'Tomato Grotesk', sans-serif;
+  --font-inter: 'Tomato Grotesk', sans-serif;
 }
 
 html {

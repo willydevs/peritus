@@ -7,6 +7,10 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 
 const officeImages = [
+  { src: "/banner1.jpg",       alt: "PERITUS Escritório Virtual" },
+  { src: "/banner2.jpg",       alt: "PERITUS Escritório Virtual" },
+  { src: "/banner3.jpg",       alt: "PERITUS Escritório Virtual" },
+  { src: "/banner4.jpg",       alt: "PERITUS Escritório Virtual" },
   { src: "/fachada.png",       alt: "Fachada PERITUS Escritório Virtual" },
   { src: "/sala-reuniao.webp", alt: "Sala de Reuniões PERITUS" },
 ];

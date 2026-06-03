@@ -2,6 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 
 const values = [
   {
@@ -48,6 +49,18 @@ export default function About() {
 
   return (
     <section id="sobre" className="relative bg-[#0A0A0A] py-28 overflow-hidden">
+      {/* Background fachada esmaecida */}
+      <div className="absolute inset-0">
+        <Image
+          src="/fachada.png"
+          alt=""
+          fill
+          className="object-cover object-center opacity-10"
+          priority={false}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/80 to-[#0A0A0A]/60" />
+      </div>
+
       {/* Red accent line */}
       <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-transparent via-[#C8102E] to-transparent opacity-40" />
 

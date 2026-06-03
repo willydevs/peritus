@@ -192,7 +192,7 @@ export default function Hero() {
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-64 h-20 bg-[#C8102E] opacity-20 rounded-full blur-3xl" />
 
             {/* Video + vignette */}
-            <div className="relative z-10 w-[420px]">
+            <div className="relative z-10 w-full max-w-[420px]">
               <video
                 src="/hero.mp4"
                 autoPlay

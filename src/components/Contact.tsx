@@ -114,7 +114,7 @@ export default function Contact() {
 
               {/* WhatsApp CTA */}
               <a
-                href="https://wa.me/5579999491000?text=Olá! Gostaria de uma consultoria gratuita com a PERITUS."
+                href="https://wa.me/557999491000?text=Olá! Vim pelo site e gostaria de uma consultoria gratuita com a PERITUS."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-5 bg-green-900/20 border border-green-600/30 rounded-sm hover:border-green-500/50 hover:bg-green-900/30 transition-all duration-300 group"
@@ -166,7 +166,7 @@ export default function Contact() {
 
             {/* CTA */}
             <a
-              href="https://wa.me/5579999491000?text=Olá! Gostaria de uma consultoria gratuita com a PERITUS."
+              href="https://wa.me/557999491000?text=Olá! Vim pelo site e gostaria de uma consultoria gratuita com a PERITUS."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full shimmer-btn flex items-center justify-center gap-3 py-5 text-white font-black uppercase tracking-widest text-sm rounded-sm shadow-[0_0_30px_rgba(200,16,46,0.4)] hover:shadow-[0_0_50px_rgba(200,16,46,0.7)] hover:scale-[1.02] transition-all duration-300"

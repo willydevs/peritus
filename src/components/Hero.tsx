@@ -159,7 +159,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
-            className="mt-12 flex flex-wrap gap-8"
+            className="mt-12 flex flex-wrap gap-8 justify-center lg:justify-start"
           >
             {[
               { num: "15+", label: "Anos de Experiência" },

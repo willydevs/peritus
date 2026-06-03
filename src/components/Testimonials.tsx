@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useCallback, useEffect, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
@@ -10,6 +11,7 @@ const testimonials = [
     name: "Carlos Eduardo Melo",
     role: "CEO – Distribuidora Melo & Filhos",
     avatar: "CM",
+    image: "/pessoas/daniel-1.png",
     stars: 5,
     text: "Antes da PERITUS, eu achava que estava pagando impostos corretamente. Depois de 3 meses com eles, descobri que estava perdendo R$ 4.800 por mês em créditos tributários que nunca aproveitei. Hoje esse dinheiro financia minha expansão.",
   },
@@ -17,6 +19,7 @@ const testimonials = [
     name: "Fernanda Souza",
     role: "Sócia – Clínica Souza & Almeida",
     avatar: "FS",
+    image: "/pessoas/zelita-1.png",
     stars: 5,
     text: "Mudança de regime tributário com a PERITUS economizou 22% da nossa carga fiscal. Em 12 meses, isso se traduz em mais de R$ 60 mil no bolso. Contabilidade que paga o próprio honorário várias vezes.",
   },
@@ -24,6 +27,7 @@ const testimonials = [
     name: "Ricardo Teles",
     role: "Fundador – Construtora Teles",
     avatar: "RT",
+    image: "/pessoas/eu-1.png",
     stars: 5,
     text: "Já passei por 4 escritórios de contabilidade em Aracaju. A PERITUS é a única que realmente entende de negócio. Não ficam só emitindo guia — eles pensam junto com você no crescimento da empresa.",
   },
@@ -31,6 +35,7 @@ const testimonials = [
     name: "Ana Paula Dantas",
     role: "Diretora – Escola Premium Kids",
     avatar: "AD",
+    image: null,
     stars: 5,
     text: "O escritório virtual foi a melhor decisão que tomei ao abrir minha empresa. Endereço nobre, sem custo de aluguel, e toda a contabilidade resolvida pela PERITUS. Começar nunca foi tão simples.",
   },
@@ -38,6 +43,7 @@ const testimonials = [
     name: "Marcelo Barbosa",
     role: "Empresário – Grupo MB Logística",
     avatar: "MB",
+    image: null,
     stars: 5,
     text: "Estava com o CNPJ irregular e com medo de operação da Receita. Em 30 dias a PERITUS regularizou tudo, negociou parcelamento e ainda encontrou uma restituição que eu nem sabia que tinha direito. Profissionalismo em outro nível.",
   },
@@ -45,6 +51,7 @@ const testimonials = [
     name: "Juliana Farias",
     role: "Proprietária – Studio JF Estética",
     avatar: "JF",
+    image: null,
     stars: 5,
     text: "Atendimento rápido, linguagem clara e sempre disponível quando preciso. Finalmente entendo meu negócio financeiramente. A PERITUS me deu segurança para tomar decisões grandes sem medo.",
   },
@@ -156,8 +163,12 @@ export default function Testimonials() {
 
                     {/* Author */}
                     <div className="flex items-center gap-3 pt-5 border-t border-white/5">
-                      <div className="w-10 h-10 rounded-full bg-[#C8102E] flex items-center justify-center text-white text-sm font-bold flex-shrink-0">
-                        {t.avatar}
+                      <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 bg-[#C8102E] flex items-center justify-center">
+                        {t.image ? (
+                          <Image src={t.image} alt={t.name} width={40} height={40} className="w-full h-full object-cover" />
+                        ) : (
+                          <span className="text-white text-sm font-bold">{t.avatar}</span>
+                        )}
                       </div>
                       <div>
                         <div className="text-white font-semibold text-sm" style={{ fontFamily: "var(--font-inter)" }}>

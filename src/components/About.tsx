@@ -64,7 +64,7 @@ export default function About() {
       {/* Red accent line */}
       <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-transparent via-[#C8102E] to-transparent opacity-40" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-8" ref={ref}>
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8" ref={ref}>
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           {/* Left: Text */}
           <div className="order-2 lg:order-1">

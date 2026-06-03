@@ -63,7 +63,9 @@ export default function Navbar() {
 
         {/* CTA */}
         <a
-          href="#contato"
+          href="https://wa.me/557999491000?text=Olá! Vim pelo site e gostaria de uma consultoria gratuita com a PERITUS."
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden lg:inline-flex items-center gap-2 px-6 py-3 bg-[#C8102E] text-white text-sm font-bold uppercase tracking-wider rounded-sm hover:bg-[#E63950] transition-all duration-300 shadow-[0_0_20px_rgba(200,16,46,0.4)] hover:shadow-[0_0_30px_rgba(200,16,46,0.6)]"
         >
           Falar com Especialista
@@ -105,7 +107,9 @@ export default function Navbar() {
               ))}
               <li>
                 <a
-                  href="#contato"
+                  href="https://wa.me/557999491000?text=Olá! Vim pelo site e gostaria de uma consultoria gratuita com a PERITUS."
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setOpen(false)}
                   className="inline-flex items-center px-6 py-3 bg-[#C8102E] text-white text-sm font-bold uppercase tracking-wider rounded-sm"
                 >

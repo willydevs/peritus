@@ -151,7 +151,9 @@ export default function WhyUs() {
               Cada mês sem planejamento tributário é dinheiro que nunca volta.
             </p>
             <a
-              href="#contato"
+              href="https://wa.me/557999491000?text=Olá! Vim pelo site e gostaria de uma consultoria gratuita com a PERITUS."
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-10 py-4 bg-white text-[#C8102E] font-black uppercase tracking-wider text-sm rounded-sm hover:bg-[#0A0A0A] hover:text-white transition-all duration-300 shadow-2xl"
             >
               Começar Agora — É Gratuito

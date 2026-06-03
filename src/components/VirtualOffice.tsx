@@ -218,7 +218,9 @@ export default function VirtualOffice() {
               className="mt-8"
             >
               <a
-                href="#contato"
+                href="https://wa.me/557999491000?text=Olá! Vim pelo site e gostaria de uma consultoria gratuita com a PERITUS."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-white text-[#0A0A0A] font-bold uppercase tracking-wider text-sm rounded-sm hover:bg-[#C8102E] hover:text-white transition-all duration-300"
               >
                 Quero Meu Escritório Virtual

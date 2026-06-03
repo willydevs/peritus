@@ -136,7 +136,9 @@ export default function Hero() {
             className="flex flex-wrap gap-4"
           >
             <a
-              href="#contato"
+              href="https://wa.me/557999491000?text=Olá! Vim pelo site e gostaria de uma consultoria gratuita com a PERITUS."
+              target="_blank"
+              rel="noopener noreferrer"
               className="shimmer-btn inline-flex items-center gap-3 px-8 py-4 text-white font-bold uppercase tracking-wider text-sm rounded-sm shadow-[0_0_30px_rgba(200,16,46,0.5)] hover:shadow-[0_0_50px_rgba(200,16,46,0.7)] hover:scale-105 transition-all duration-300"
             >
               <span>Proteger Minha Empresa</span>

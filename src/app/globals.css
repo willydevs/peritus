@@ -1,26 +1,89 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --red: #C8102E;
+  --red-dark: #8B0000;
+  --red-light: #E63950;
+  --gold: #C9A84C;
+  --black: #0A0A0A;
+  --white: #FAFAFA;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #0A0A0A; }
+::-webkit-scrollbar-thumb { background: var(--red); border-radius: 3px; }
+
+.embla { overflow: hidden; }
+.embla__container { display: flex; }
+.embla__slide { flex: 0 0 100%; min-width: 0; }
+@media (min-width: 768px) { .embla__slide { flex: 0 0 50%; } }
+@media (min-width: 1024px) { .embla__slide { flex: 0 0 33.333%; } }
+
+.gradient-red {
+  background: linear-gradient(135deg, #C8102E 0%, #FF4D6D 50%, #C8102E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #C9A84C 0%, #F0D080 60%, #C9A84C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-16px) rotate(1deg); }
+}
+.animate-float { animation: float 5s ease-in-out infinite; }
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+.animate-pulse-glow { animation: pulseGlow 3s ease-in-out infinite; }
+
+@keyframes lineIn {
+  from { width: 0; opacity: 0; }
+  to { width: 80px; opacity: 1; }
+}
+.animate-line { animation: lineIn 0.8s ease-out 0.3s both; }
+
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.animate-slide-up { animation: slideUp 0.8s ease-out both; }
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.shimmer-btn {
+  background: linear-gradient(90deg, #C8102E 0%, #FF4D6D 30%, #C8102E 60%, #FF4D6D 100%);
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee { animation: marquee 20s linear infinite; }
+
+@keyframes counterUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }

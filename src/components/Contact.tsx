@@ -23,6 +23,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: -30 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
+            className="order-2 lg:order-1"
           >
             <span className="text-[#C8102E] text-xs font-bold uppercase tracking-[0.3em] mb-4 block">
               Entre em Contato
@@ -142,7 +143,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: 30 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex flex-col items-center gap-6"
+            className="order-1 lg:order-2 flex flex-col items-center gap-6"
           >
             {/* Foto com vignette */}
             <div className="relative w-full overflow-hidden rounded-sm">

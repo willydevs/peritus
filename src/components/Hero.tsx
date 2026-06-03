@@ -80,7 +80,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-28 pb-20 grid lg:grid-cols-2 gap-16 items-center">
         {/* Text */}
-        <div>
+        <div className="order-2 lg:order-1">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -182,7 +182,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.4, duration: 0.9, ease: "easeOut" }}
-          className="hidden lg:flex items-end justify-center"
+          className="order-1 lg:order-2 flex items-end justify-center"
         >
           <div className="relative">
             {/* Glow behind */}

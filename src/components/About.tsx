@@ -54,7 +54,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8" ref={ref}>
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           {/* Left: Text */}
-          <div>
+          <div className="order-2 lg:order-1">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -109,7 +109,7 @@ export default function About() {
           </div>
 
           {/* Right: Values grid */}
-          <div className="grid grid-cols-2 gap-5">
+          <div className="order-1 lg:order-2 grid grid-cols-2 gap-5">
             {values.map((v, i) => (
               <motion.div
                 key={v.title}

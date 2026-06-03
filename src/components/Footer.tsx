@@ -11,16 +11,10 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-5">
-              <div className="relative w-10 h-10">
-                <Image src="/logo.png" alt="PERITUS" fill className="object-contain" />
+            <div className="mb-5">
+              <div className="relative w-36 h-12">
+                <Image src="/logo.png" alt="PERITUS" fill className="object-contain object-left brightness-0 invert" />
               </div>
-              <span
-                style={{ fontFamily: "var(--font-playfair)" }}
-                className="text-xl font-black tracking-[0.15em] text-white"
-              >
-                PERITUS
-              </span>
             </div>
             <p
               className="text-gray-600 text-sm leading-relaxed max-w-xs"

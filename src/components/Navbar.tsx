@@ -35,21 +35,15 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-20">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-3 group">
-          <div className="relative w-12 h-12">
+        <a href="#" className="flex items-center group">
+          <div className="relative w-40 h-14">
             <Image
               src="/logo.png"
               alt="PERITUS"
               fill
-              className="object-contain"
+              className="object-contain object-left brightness-0 invert"
             />
           </div>
-          <span
-            style={{ fontFamily: "var(--font-playfair)" }}
-            className="text-2xl font-black tracking-[0.15em] text-white group-hover:text-[#C8102E] transition-colors"
-          >
-            PERITUS
-          </span>
         </a>
 
         {/* Desktop links */}
